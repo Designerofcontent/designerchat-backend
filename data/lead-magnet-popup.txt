@@ -1,0 +1,39 @@
+Designer of Content
+Lead Magnet Popup
+
+Free Lead Magnet Popup Information
+
+The Designer of Content website features a popup that offers visitors a free lead magnet. This popup appears after 3 seconds when a visitor first comes to the site (unless they've seen it before).
+
+Key Features:
+- Modern dark design with blue accents
+- Appears after 3 seconds for new visitors
+- Remembers if users have seen it (using localStorage)
+- Collects name, email, and industry information
+- Sends submissions to designerofcontent@gmail.com
+
+Industries Supported:
+- Travel Agents
+- Realtors
+- Salons
+- Life Coaches
+- Fitness Trainers
+- Marketing Agency
+- Home Cleaners
+- Auto Repair Shops
+- MLM Marketers
+- Pet Groomers
+
+The popup emphasizes three key benefits:
+1. Choose your industry
+2. Grab your free lead magnet
+3. Start turning visitors into clients today
+
+The form includes fields for:
+- Industry selection (dropdown)
+- Name
+- Email
+
+When submitted, the system sends an email notification and confirms to the user that their lead magnet is on the way to their inbox.
+
+The popup is implemented as a WordPress plugin called "Designer of Content Lead Magnet" that adds the necessary HTML, CSS, and JavaScript to the website.

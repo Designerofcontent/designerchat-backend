@@ -1,0 +1,11 @@
+{
+  "source": "https://designerofcontent.com/lead-magnet-popup",
+  "chunks": [
+    {
+      "content": ". Start turning visitors into clients today\n\nThe form includes fields for:\n- Industry selection (dropdown)\n- Name\n- Email\n\nWhen submitted, the system sends an email notification and confirms to the user that their lead magnet is on the way to their inbox.\n\nThe popup is implemented as a WordPress plugin called \"Designer of Content Lead Magnet\" that adds the necessary HTML, CSS, and JavaScript to the website.",
+      "metadata": {
+        "source": "https://designerofcontent.com/lead-magnet-popup"
+      }
+    }
+  ]
+}
