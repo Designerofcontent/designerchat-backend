@@ -23,9 +23,9 @@ if (!fs.existsSync(contentDir)) {
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// CORS configuration for deployment
+// CORS configuration for deployment - allow all origins for testing
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: '*', // Allow requests from any origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
   optionsSuccessStatus: 204
