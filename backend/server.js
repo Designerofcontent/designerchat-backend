@@ -50,14 +50,19 @@ app.get('/health', (req, res) => {
 app.use('/api/chat', chatRouter);
 app.use('/api/admin', adminRouter);
 
-// Serve static files in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../frontend/build')));
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+// API-only mode for Render deployment
+// We're not serving frontend files from here since they'll be on WordPress
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'Designer of Content AI Chatbot API', 
+    status: 'running',
+    endpoints: [
+      '/api/chat - Chat endpoint',
+      '/api/admin - Admin endpoints',
+      '/health - Health check'
+    ]
   });
-}
+});
 
 // Error handling middleware
 app.use((err, req, res, next) => {
